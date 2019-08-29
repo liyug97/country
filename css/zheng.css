@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-image: url("../images/背景.jpg");
+    text-indent: 2em;
+}
+.all {
+    width: 1010px;
+    margin: auto;
+    padding-top: 20px;
+}
+.daohang {
+    margin: auto;
+    width: 1200px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.8);
+}
+.daohang a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.daohang a:hover {
+    color: aqua;
+}
+.daohang ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+.daohang li {
+    float: left;
+    padding-left: 80px;
+    font-size: 18px;
+}
+.all{
+	 background-color: rgba(255,255,255,1.00);
+	  width: 1010px;
+    margin: auto;
+	margin-top:20px;
+}
+.all-left {
+	padding-left:10px;
+    width: 750px;
+    float: left;
+    background-color: rgba(255,255,255,1.00);
+    padding-right: 10px;
+    height: 2200px;
+}
+.all-left h2 {
+    color: rgba(155,165,241,1.00);
+	
+    font-size: 24px;
+	
+}
+.jiange {
+    margin-top: -15px;
+    width: 700px;
+    height: 3px;
+    background-color: antiquewhite;
+}
+.main h4{
+	padding-left:15px;
+}
+.zhengzhi img{
+	float: right;
+}
+.zhengzhi {
+	padding-left:10px;
+}
+.zhengzhi{
+	 font-size: 15px;
+    padding-left: 15px;
+}
+.junshi {
+	padding-left:15px;
+}
+.junshi img{
+	float: right;
+}
+.junshi span{
+	padding-left: 25px;
+	font-size:16px;
+	font-weight: bold;
+}
+.all-right {
+	
+    float: right;
+    width: 240px;
+    height: 2200px;
+    background-color: rgba(251,251,251,1.00);
+}
+.r-main {
+    padding-top: 50px;
+}
+.r-main ul {
+    list-style: none;
+}
+.r-main img {
+    width: 110px;
+    height: 130px;
+}
+.r-main ul li {
+    float: left;
+    padding-top: 15px;
+}
+.r-main a{
+	text-decoration: none;
+	
+}
+.r-main a:hover{
+	color: aqua;
+}

@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brilliant years</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/playerslider.js"></script>
+<script type="text/javascript">
+	  window.onload=function() {
+    // var skinIndex = window.localStorage.getItem('skinIndex') || 22;
+    // document.body.style.background = 'url("images/' + skinIndex + '.jpg") no-repeat';
+		// document.body.style.backgroundSize='100% 100%';
+		var top = document.getElementsByClassName("top");
+		var ul=document.getElementById("ul");
+		var allLis = ul.children;
+		for (var i = 0; i < allLis.length; i++) {
+		  var sLi = allLis[i]; //取到当个li
+		  sLi.index = i + 22;
+		  sLi.onclick= function() {
+			document.body.style.background =
+			  'url("images/' + this.index + '.jpg") no-repeat';
+			  document.body.style.backgroundSize='100% 100%';
+        // window.localStorage.setItem('skinIndex', this.index);
+		  };
+		}
+	}
+$(document).ready(function(){
+	// 焦点图片水平滚动
+	$("#slider1").Xslider({
+		// 默认配置
+		affect: 'scrollx', //效果  有scrollx|scrolly|fade|none
+		speed: 800, //动画速度
+		space: 6000, //时间间隔
+		auto: true, //自动滚动
+		trigger: 'mouseover', //触发事件 注意用mouseover代替hover
+		conbox: '.conbox', //内容容器id或class
+		ctag: 'div', //内容标签 默认为<a>
+		switcher: '.switcher', //切换触发器id或class
+		stag: 'a', //切换器标签 默认为a
+		current:'cur', //当前切换器样式名称
+		rand:false //是否随机指定默认幻灯图片
+	});
+	// 焦点图片垂直滚动
+	$("#slider2").Xslider({
+		affect:'scrolly',
+		ctag: 'div',
+		speed:400
+	});
+	// 焦点图片淡隐淡现
+	$("#slider3").Xslider({
+		affect:'fade',
+		ctag: 'div'
+	});
+	// 选项卡
+	$("#slider4").Xslider({
+		affect:'none',
+		ctag: 'div',
+		speed:10
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="nav">
+  <ul>
+    <li><a href="../../country/index.html ">Chinese version</a></li>
+    <li><a href="register.html" target="_blank"> registered</a></li>
+    <li><a href="logic.html" target="_blank"> Dear, please log in</a></li>
+  </ul>
+</div>
+<div class="top">
+  <ul id="ul">
+    <li><img src="./images/22.jpg" alt="" /></li>
+    <li><img src="./images/23.jpg" alt="" /></li>
+    <li><img src="./images/24.jpg" alt="" /></li>
+    <li><img src="./images/25.jpg" alt="" /></li>
+    <li><img src="./images/26.jpg" alt="" /></li>
+  </ul>
+</div>
+<div class="main">
+  <div class="matter1">
+    <div class="left">
+      <div id="slider3" class="slider">
+        <div class="conbox">
+          <div><a href="#" title=""><img src="images/10.jpg" width="734" height="272" /></a></div>
+          <div><a href="#" title=""><img src="images/11.jpg" width="734" height="272" /></a></div>
+          <div><a href="#" title=""><img src="images/1.jpg" width="734" height="272" /></a></div>
+          <div><a href="#" title=""><img src="images/9.jpg" width="734" height="272" /></a></div>
+          <div><a href="#" title=""><img src="images/7.jpg" width="734" height="272" /></a></div>
+          <div><a href="#" title=""><img src="images/6.jpg" width="734" height="272" /></a></div>
+          <div><a href="#" title=""><img src="images/13.jpg" width="734" height="272" /></a></div>
+        </div>
+        <div class="switcher"> <a href="#" class="cur">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="guanghuisuiyue">
+  <div class="main-center">
+    <div><img src="images/12.jpg" height="150" width="150"></div>
+    <div class="lookuptxt">
+      <input type="text" class="choosetxt">
+      <div class="lookupbtn" onClick="Btnslect">
+        <p>search for</p>
+      </div>
+      <div class="wenzi">
+        <ul>
+          <li><a href="history.html"> Review history</a> </li>
+          <li><a href="now.html"> Development now</a> </li>
+          <li><a href="focus.html"> Focus</a> </li>
+          <li><a href="times.html"> Model of the times</a> </li>
+          <li><a href="contact-us.html">Contact us</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="container">
+  <div class="content-box">
+    <h1>Glorious deeds</h1>
+    <div class="people">
+      <div class="box"> <a href="rw11.html"><img src="images/27.jpg" width="270" height="440"></a> </div>
+      <div class="content">
+        <h3>manned space flight</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> At 18 o'clock on September 22, 2017, the Tianzhou-1 cargo spacecraft was controlled to derail. At this point, the second step of China’s manned spaceflight project was completed, and striding into the “space station era”. </p>
+      </div>
+    </div>
+    <div class="people1">
+      <div class="box1"> <a href="rw12.html"><img src="images/28.jpg" width="270" height="440"></a> </div>
+      <div class="content1">
+        <h3>Jiaolong exploring the sea</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> As the only deep-sea manned submersible being used in China, the Xiaolong has an important role in exploring the deep sea. The depth of dive is a symbol of the country's ability to explore the deep sea. Among the world-class scientific manned submersibles, only the Nine Dragons can reach a working depth of 7,000 meters. </p>
+      </div>
+    </div>
+    <div class="people2">
+      <div class="box2"> <a href="rw13.html"><img src="images/29.jpg" width="270" height="440"></a> </div>
+      <div class="content2">
+        <h3>Single-caliber radio telescope</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> As the world's largest single-caliber radio telescope, the completion of FAST has pushed Chinese astronomical research into a deeper world: it has created a new model for the construction of giant telescopes with independent intellectual property rights and is believed to remain in the next 10 to 20 years. World-class status. </p>
+      </div>
+    </div>
+    <div class="people3">
+      <div class="box3"> <a href="rw14.html"><img src="images/30.jpg" width="270" height="440"></a> </div>
+      <div class="content3">
+        <h3>super computer</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> 9.3 billion times per second! This is the floating point operation speed of "Shenwei·Taihu Light". In June 2017, in the latest list of the world's top 500 supercomputers released in Germany, “Shenwei·Taihu Light” took the third place in the list with this “super speed” and achieved three consecutive championships.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content-box">
+    <h1>historical figure</h1>
+    <div class="people">
+      <div class="box"> <a href="person1.html"><img src="images/15.jpg"></a> </div>
+      <div class="content">
+        <h3>Emperor Qin Shihuang</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> Zheng Zheng, Yu surname, Qin or Zhao, Ming Zheng, also known as Zhao Zheng (political), Qin Zheng, or Zu Long, the son of Qinzhuang. The famous politician, strategist and reformer in Chinese history, the iron fist politician who completed the Chinese unification, and the first Chinese emperor to be the emperor. </p>
+      </div>
+    </div>
+    <div class="people1">
+      <div class="box1"> <a href="person2.html"><img src="images/16.jpg"></a> </div>
+      <div class="content1">
+        <h3>Lin Zexu</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> The character is Fu, and the words are less Mu, Shi Lin, the old man in the late village, the retreat of the village, the return of the 72nd peak, the retreat of the bottle spring, the scattered people of the Shushe, etc., the Houguan County of Fujian, the politics of the Qing Dynasty Home, thinker and poet. </p>
+      </div>
+    </div>
+    <div class="people2">
+      <div class="box2"> <a href="person3.html"><img src="images/17.jpg"></a> </div>
+      <div class="content2">
+        <h3> Lu Xun</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> He used the name Zhou Yishou, later renamed Zhou Shuren, once renamed Yushan, later changed Yu Cai, and studied at the Japanese Sendai Medical College (肄业). "Lu Xun" is the pseudonym he used when he published "The Madman's Diary" in 1918, and he is also the most widely known pen name, Shaoxing, Zhejiang. A famous writer, thinker, democratic warrior.  </p>
+      </div>
+    </div>
+    <div class="people3">
+      <div class="box3"> <a href="person4.html"><img src="images/20.jpg" width="270" height="440"></a> </div>
+      <div class="content3">
+        <h3>Qiu Shaoyun</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> Born in Shaoyun Town, Tongliang District, Chongqing (formerly Guanyin Township, Tongliang County, Sichuan Province [1]) Qiujiagou, Yuping Village, revolutionary martyrs. </p>
+      </div>
+    </div>
+  </div>
+  <div class="content-box">
+    <h1>Modern character</h1>
+    <div class="people">
+      <div class="box"> <a href="rw31.html"><img src="images/21.jpg" width="270" height="440"></a> </div>
+      <div class="content">
+        <h3>Yuan Longping</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> Dean County, Jiujiang City, Jiangxi Province, graduated from Southwest Agricultural College, China's hybrid rice breeding expert, the pioneer of Chinese research and development of hybrid rice, known as the "father of the world's hybrid rice." </p>
+      </div>
+    </div>
+    <div class="people1">
+      <div class="box1"> <a href="rw32.html"><img src="images/19.jpg"></a> </div>
+      <div class="content1">
+        <h3>Mao Zedong</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> The word is run, and the pen name is used. Hunan Xiangtan people. He was one of the founders of the Communist Party of China and the main founder and leader of the Chinese People's Liberation Army and the People's Republic of China. From 1949 to 1976, Mao Zedong served as the highest leader of the People's Republic of China. </p>
+      </div>
+    </div>
+    <div class="people2">
+      <div class="box2"> <a href="rw33.html"><img src="images/18.jpg"></a> </div>
+      <div class="content2">
+        <h3>Deng Xiaoping</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> Guang'an, Sichuan, formerly known as Deng Xiansheng, was renamed Deng Xixian by the Enlightenment teacher, the second generation leadership leader of the Communist Party of China, Marxist, proletarian revolutionary, politician, strategist, diplomat, People's Liberation Army, People's Republic of China One of the main leaders. </p>
+      </div>
+    </div>
+    <div class="people3">
+      <div class="box3"> <a href="rw34.html"><img src="images/14.jpg"></a> </div>
+      <div class="content3">
+        <h3>Yang Liwei</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> A special astronaut, born in Huludao City, Liaoning Province, graduated from the Air Force Aviation University of the People's Liberation Army, China's first person to enter space. He was the first generation of astronauts trained in China and flew safely for 1,350 hours in the original Air Force. </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <p>Copyright © 2019 Threegirls All rights reserved.</p>
+</div>
+</body>
+</html>

@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>光辉岁月</title>
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/player.js"></script>
@@ -64,12 +65,12 @@ $(document).ready(function(){
 
 <body>
 <div id="nav">
-	 <ul>
-		 <li><a href="register.html" target="_blank">注册</a></li>
-		 <li><a href="logic.html" target="_blank">亲，请登录</a></li>
-	   
-	</ul>
-	</div>
+  <ul>
+    <li><a href="english/index.html">英文版本</a></li>
+    <li><a href="register.html" target="_blank">注册</a></li>
+    <li><a href="logic.html" target="_blank">亲，请登录</a></li>
+  </ul>
+</div>
 <div class="top">
   <ul id="ul">
     <li><img src="./images/22.jpg" alt="" /></li>
@@ -99,55 +100,29 @@ $(document).ready(function(){
 </div>
 <div class="guanghuisuiyue">
   <div class="main-center">
-      <div><img src="images/12.jpg" height="150" width="150"></div>
-      <div class="lookuptxt">
-        <input type="text" class="choosetxt">
-        <div class="lookupbtn" onClick="Btnslect">
-          <p>搜索</p>
-        </div>
-        <div class="wenzi">
-          <ul>
-          <li><a href="history.html">回顾历史</a>
-            </li>
-            <li><a href="#">现在发展</a>
-              <ul>
-                <li><a href="#">中国天眼</a></li>
-                <li><a href="#">复兴号</a></li>
-                <li><a href="#">振华30</a></li>
-                <li><a href="#">墨子号</a></li>
-                <li><a href="#">港珠澳桥</a></li>
-              </ul>
-            </li>
-            <li><a href="#">关注焦点</a>
-              <ul>
-                <li><a href="#">教育</a></li>
-            <li><a href="#">医疗卫生</a></li>
-            <li><a href="#">住房问题</a></li>
-            <li><a href="#">退休</a></li>
-              </ul>
-            </li>
-           <li><a href="#">时代楷模</a>
-              <ul>
-                <li><a href="#">郝井文</a></li>
-            <li><a href="#">王逸平</a></li>
-            <li><a href="#">航天员群体</a></li>
-            <li><a href="#">杜富国</a></li>
-              </ul>
-            </li>
-           <li><a href="#">论坛</a>
-              <ul>
-                <li><a href="#">八纵八横</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+    <div><img src="images/12.jpg" height="150" width="150"></div>
+    <div class="lookuptxt">
+      <input type="text" class="choosetxt">
+      <div class="lookupbtn" onClick="Btnslect">
+        <p>搜索</p>
       </div>
+      <div class="wenzi">
+        <ul>
+          <li><a href="history.html">回顾历史</a> </li>
+          <li><a href="now.html">现在发展</a> </li>
+          <li><a href="focus.html">关注焦点</a> </li>
+          <li><a href="times.html">时代楷模</a> </li>
+          <li><a href="contact-us.html">联系我们</a> </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
-<div class="content-box">
+<div id="container">
+  <div class="content-box">
     <h1>辉煌事迹</h1>
     <div class="people">
-      <div class="box"> <a href="#"><img src="images/27.jpg" width="270" height="440"></a> </div>
+      <div class="box"> <a href="rw11.html"><img src="images/27.jpg" width="270" height="440"></a> </div>
       <div class="content">
         <h3>载人航天</h3>
         <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
@@ -156,7 +131,7 @@ $(document).ready(function(){
       </div>
     </div>
     <div class="people1">
-      <div class="box1"> <a href="#"><img src="images/28.jpg" width="270" height="440"></a> </div>
+      <div class="box1"> <a href="rw12.html"><img src="images/28.jpg" width="270" height="440"></a> </div>
       <div class="content1">
         <h3>蛟龙号探海</h3>
         <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
@@ -165,7 +140,7 @@ $(document).ready(function(){
       </div>
     </div>
     <div class="people2">
-      <div class="box2"> <a href="#"><img src="images/29.jpg" width="270" height="440"></a> </div>
+      <div class="box2"> <a href="rw13.html"><img src="images/29.jpg" width="270" height="440"></a> </div>
       <div class="content2">
         <h3>单口径射电望远镜</h3>
         <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
@@ -174,7 +149,7 @@ $(document).ready(function(){
       </div>
     </div>
     <div class="people3">
-      <div class="box3"> <a href="#"><img src="images/30.jpg" width="270" height="440"></a> </div>
+      <div class="box3"> <a href="rw14.html"><img src="images/30.jpg" width="270" height="440"></a> </div>
       <div class="content3">
         <h3>超级计算机</h3>
         <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
@@ -182,85 +157,88 @@ $(document).ready(function(){
         <p> 每秒9.3亿亿次！这是“神威·太湖之光”的浮点运算速度。2017年6月，在德国发布的最新一期全球超级计算机500强榜单中，“神威·太湖之光”凭借这一“超级速度”第三次出现在榜单榜首位置，实现三连冠。</p>
       </div>
     </div>
-</div>
-
-<h1>历史人物</h1>
-<div class="people">
-  <div class="box"> <a href="#"><img src="images/15.jpg"></a> </div>
-  <div class="content">
-    <h3>秦始皇</h3>
-    <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
-    </object>
-    <p> 嬴政，嬴姓，秦氏或赵氏，名政，又名赵正（政）、秦政，或称祖龙  ，秦庄襄王之子。 中国历史上著名的政治家、战略家、改革家，完成华夏大一统的铁腕政治人物，也是中国第一个称皇帝的君主。 </p>
   </div>
-</div>
-<div class="people1">
-  <div class="box1"> <a href="#"><img src="images/16.jpg"></a> </div>
-  <div class="content1">
-    <h3>林则徐</h3>
-    <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
-    </object>
-    <p> 字元抚，又字少穆、石麟，晚号俟村老人、俟村退叟、七十二峰退叟、瓶泉居士、栎社散人等，福建侯官县人，是清朝时期的政治家、思想家和诗人。 </p>
+  <div class="content-box">
+    <h1>历史人物</h1>
+    <div class="people">
+      <div class="box"> <a href="person1.html"><img src="images/15.jpg"></a> </div>
+      <div class="content">
+        <h3>秦始皇</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> 嬴政，嬴姓，秦氏或赵氏，名政，又名赵正（政）、秦政，或称祖龙  ，秦庄襄王之子。 中国历史上著名的政治家、战略家、改革家，完成华夏大一统的铁腕政治人物，也是中国第一个称皇帝的君主。 </p>
+      </div>
+    </div>
+    <div class="people1">
+      <div class="box1"> <a href="person2.html"><img src="images/16.jpg"></a> </div>
+      <div class="content1">
+        <h3>林则徐</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> 字元抚，又字少穆、石麟，晚号俟村老人、俟村退叟、七十二峰退叟、瓶泉居士、栎社散人等，福建侯官县人，是清朝时期的政治家、思想家和诗人。 </p>
+      </div>
+    </div>
+    <div class="people2">
+      <div class="box2"> <a href="person3.html"><img src="images/17.jpg"></a> </div>
+      <div class="content2">
+        <h3>鲁迅</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> 曾用名周樟寿，后改名为周树人，曾字豫山，后改豫才，曾留学日本仙台医科专门学校（肄业）。“鲁迅”是他1918年发表《狂人日记》时所用的笔名，也是他影响最为广泛的笔名，浙江绍兴人。著名文学家、思想家、民主战士，五四新文化运动的重要参与者。 </p>
+      </div>
+    </div>
+    <div class="people3">
+      <div class="box3"> <a href="person4.html"><img src="images/20.jpg" width="270" height="440"></a> </div>
+      <div class="content3">
+        <h3>邱少云</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> 出生于重庆市铜梁区少云镇（原四川铜梁县关溅乡 [1]  ）玉屏村邱家沟，革命烈士。 </p>
+      </div>
+    </div>
   </div>
-</div>
-<div class="people2">
-  <div class="box2"> <a href="#"><img src="images/17.jpg"></a> </div>
-  <div class="content2">
-    <h3>鲁迅</h3>
-    <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
-    </object>
-    <p> 曾用名周樟寿，后改名为周树人，曾字豫山，后改豫才，曾留学日本仙台医科专门学校（肄业）。“鲁迅”是他1918年发表《狂人日记》时所用的笔名，也是他影响最为广泛的笔名，浙江绍兴人。著名文学家、思想家、民主战士，五四新文化运动的重要参与者，中国现代文学的奠基人。 </p>
-  </div>
-</div>
-<div class="people3">
-  <div class="box3"> <a href="#"><img src="images/20.jpg"></a> </div>
-  <div class="content3">
-    <h3>邱少云</h3>
-    <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
-    </object>
-    <p> 出生于重庆市铜梁区少云镇（原四川铜梁县关溅乡 [1]  ）玉屏村邱家沟，革命烈士。 </p>
-  </div>
-</div>
-<h1>现代人物</h1>
-<div class="people">
-  <div class="box"> <a href="#"><img src="images/21.jpg" width="270" height="440"></a> </div>
-  <div class="content">
-    <h3>袁隆平</h3>
-    <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
-    </object>
-    <p> 江西省九江市德安县人，毕业于西南农学院，中国杂交水稻育种专家，中国研究与发展杂交水稻的开创者，被誉为“世界杂交水稻之父”。 </p>
-  </div>
-</div>
-<div class="people1">
-  <div class="box1"> <a href="#"><img src="images/19.jpg"></a> </div>
-  <div class="content1">
-    <h3>毛泽东</h3>
-    <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
-    </object>
-    <p> 字润之，笔名子任。湖南湘潭人。他是中国共产党创始人之一，也是中国人民解放军和中华人民共和国的主要缔造者和领导人，1949至1976年，毛泽东担任中华人民共和国最高领导人。 </p>
-  </div>
-</div>
-<div class="people2">
-  <div class="box2"> <a href="#"><img src="images/18.jpg"></a> </div>
-  <div class="content2">
-    <h3>邓小平</h3>
-    <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
-    </object>
-    <p> 四川广安人，原名邓先圣，后由启蒙老师改名为邓希贤，中国共产党第二代领导核心领导者，马克思主义者，无产阶级革命家、政治家、军事家、外交家，中国人民解放军、中华人民共和国的主要领导人之一。 </p>
-  </div>
-</div>
-<div class="people3">
-  <div class="box3"> <a href="#"><img src="images/14.jpg"></a> </div>
-  <div class="content3">
-    <h3>杨利伟</h3>
-    <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
-    </object>
-    <p> 特级航天员，出生于辽宁省葫芦岛市，毕业于中国人民解放军空军航空大学，中国人民解放军少将军衔，中国进入太空的第一人。他是中国培养的第一代航天员，在原空军部队安全飞行1350小时之久。 </p>
+  <div class="content-box">
+    <h1>现代人物</h1>
+    <div class="people">
+      <div class="box"> <a href="rw31.html"><img src="images/21.jpg" width="270" height="440"></a> </div>
+      <div class="content">
+        <h3>袁隆平</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> 江西省九江市德安县人，毕业于西南农学院，中国杂交水稻育种专家，中国研究与发展杂交水稻的开创者，被誉为“世界杂交水稻之父”。 </p>
+      </div>
+    </div>
+    <div class="people1">
+      <div class="box1"> <a href="rw32.html"><img src="images/19.jpg"></a> </div>
+      <div class="content1">
+        <h3>毛泽东</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> 字润之，笔名子任。湖南湘潭人。他是中国共产党创始人之一，也是中国人民解放军和中华人民共和国的主要缔造者和领导人，1949至1976年，毛泽东担任中华人民共和国最高领导人。 </p>
+      </div>
+    </div>
+    <div class="people2">
+      <div class="box2"> <a href="rw33.html"><img src="images/18.jpg"></a> </div>
+      <div class="content2">
+        <h3>邓小平</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> 四川广安人，原名邓先圣，后由启蒙老师改名为邓希贤，中国共产党第二代领导核心领导者，马克思主义者，无产阶级革命家、政治家、军事家、外交家，中国人民解放军、中华人民共和国的主要领导人之一。 </p>
+      </div>
+    </div>
+    <div class="people3">
+      <div class="box3"> <a href="rw34.html"><img src="images/14.jpg"></a> </div>
+      <div class="content3">
+        <h3>杨利伟</h3>
+        <object style="width: 100%;height: 1px;background: rgba(0,0,0,0.1)">
+        </object>
+        <p> 特级航天员，出生于辽宁省葫芦岛市，毕业于中国人民解放军空军航空大学，中国进入太空的第一人。他是中国培养的第一代航天员，在原空军部队安全飞行1350小时之久。 </p>
+      </div>
+    </div>
   </div>
 </div>
 <div id="footer">
-	 <p>Copyright © 2019 Threegirls All rights reserved.</p>
-	</div>
-
+  <p>Copyright © 2019 Threegirls All rights reserved.</p>
+</div>
 </body>
 </html>

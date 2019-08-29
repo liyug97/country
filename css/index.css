@@ -24,17 +24,18 @@ a {
 }
 #nav ul{
 	width:100%;
+    
 }
 #nav ul li{
-	float: right;
-	margin-right: 30px;
+	float:right;
+	margin-right: 40px;
 	line-height: 30px;
 }
 #nav a{
 	color: #fff;
 }
 #nav a:hover{
-	color: crimson;
+	color:#DF1D20;
 }
 .top {
 	background-color: rgba(255, 255, 255, 0.5);
@@ -85,7 +86,6 @@ a {
 .wenzi {
 	font-size: 15px;
 	font-weight: bold;
-	margin-left: -20px;
 	margin-top: -10px;
 }
 .wenzi ul {
@@ -135,17 +135,18 @@ a {
 	width: 1000px; 			/*页面主体宽度为1000px*/
 	margin: 0 auto; 			/*上下左右都自动适应*/
 	padding: 3px;
-	margin-left: 250px;
 	padding-top: 30px;
 }
 .matter1 {
 	width: 100%;
 	overflow: hidden;
 	margin-top: 6px;
+	margin-left: 120px;
 }
 .matter1 .left {
-	width: 650px;
+	width: 750px;
 	float: left;
+	
 }
 /* 幻灯片广告样式 */
 .slider {
@@ -198,6 +199,12 @@ h3{
 	height: 70px;
 	overflow: hidden;
 }
+#container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
 .people {
 	position: relative;
 	margin: 10px;
@@ -205,6 +212,7 @@ h3{
 	height: 440px;
 	border: 4px solid #FFFFFF;
 	box-shadow: 0 15px 15px rgba(0,0,0,.4);
+	flex: 1;
 }
 .people .box {
 	position: absolute;

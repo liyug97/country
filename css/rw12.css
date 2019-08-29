@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-image: url("../images/背景.jpg");
+    text-indent: 2em;
+}
+.daohang {
+    margin: auto;
+    width: 1200px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.8);
+}
+.daohang a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.daohang a:hover {
+    color: aqua;
+}
+.daohang ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+.daohang li {
+    float: left;
+    padding-left: 80px;
+    font-size: 18px;
+}
+.all {
+    width: 1010px;
+    margin: auto;
+    padding-top: 20px;
+}
+.top-t h1 {
+    padding-top: 20px;
+}
+.p {
+    margin-left: 0px;
+    font-size: 15px;
+}
+.all-left {
+    width: 750px;
+    float: left;
+    background-color: rgba(255,255,255,1.00);
+    padding-right: 20px;
+    height: 1400px;
+}
+.all-right {
+    float: right;
+    width: 240px;
+    height: 1400px;
+    background-color: rgba(251,251,251,1.00);
+}
+.top-t h1 {
+    padding-top: 20px;
+}
+.top-mian img {
+    margin-top: 30px;
+    padding: 5px;
+    border: 1px solid rgba(170,170,170,1.00);
+    float: left;
+}
+.jianjie {
+    padding-top: 850px;
+}
+.jianjie h2 {
+    color: rgba(155,165,241,1.00);
+    font-size: 24px;
+}
+.jiange {
+    margin-top: -15px;
+    width: 700px;
+    height: 3px;
+    background-color: antiquewhite;
+}
+.jianjie-main {
+    padding-top: 10px;
+}
+.jingli-main span {
+    font-size: 20px;
+    padding-left: 15px;
+}
+.jianjie-main p {
+    font-size: 15px;
+    padding-left: 25px;
+}
+.jianjie-main img {
+    float: right;
+    padding-left: 20px;
+}
+.main {
+    padding-top: 50px;
+}
+.main ul {
+    list-style: none;
+}
+.main img {
+    width: 155px;
+    height: 140px;
+}
+.main ul li {
+    float: left;
+    padding-top: 15px;
+    margin-left: -20px;
+}
+.main a {
+    text-decoration: none;
+}
+.main a:hover {
+    color: aqua;
+}

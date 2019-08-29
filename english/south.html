@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>South-to-North Water Transfer</title>
+<style>
+/*body{
+         background-color: skyblue; 
+    }*/
+* {					/* *表示针对HTML的所有元素*/
+	padding: 0px;	/*外边距为0px*/
+	margin: 0px;		/*内边距为0px*/
+	line-height: 23px;		/*行高20px*/
+}
+body {				/*设置页面整体样式*/
+	height: 100%;		/*高度为相对单位*/
+	background-color: #f3f1e9;		/*浅灰色背景*/
+	position: relative;		/*相对定位*/
+}
+img {
+	border: 0px;			/*图片无边框*/
+}
+#main_block {				/*设置主体容器的样式*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;		/*设置文字大小为12px*/
+	color: #464646;			/*设置默认文字颜色为灰色*/
+	overflow: hidden;		/*溢出隐藏*/
+	width: 800px;	/*设置容器宽度为752px*/
+	margin: 0 auto;
+	background-color: #fff;
+}
+.content_main {				/*设置内容区域的样式*/
+	width: 800px;
+	float: left;			/*向左浮动*/
+	padding: 20px 0 10px 20px;	/*上、右、下、左的内边距依次为20px,0px,10px,20px*/
+}
+.box_details {				/*设置详细信息盒子的样式*/
+	padding: 10px 0 10px 0;	/*上、右、下、左的内边距依次为10px,0px,10px,0px*/
+	margin: 10px 20px 10px 0;	/*上、右、下、左的外边距依次为10px,20px,100px*/
+	clear: both;			/*清除所有浮动*/
+}
+.box_details p {			/*设置盒子中段落的样式*/
+	padding: 5px 15px 5px 15px;	/*上、右、下、左的内边距依次为5px,15px,5px,15px*/
+	text-indent: 2em			/*首行缩进*/
+}
+img.right {		/*设置图片对齐方式*/
+	float: right;		/*向右浮动*/
+	padding: 0 0 0 25px;/*上、右、下、左的内边距依次为0px,0px,0px,30px*/
+}
+.h2 {
+	color: #7486c6;
+	border-bottom: 1px solid #ccc;
+	height: 30px;
+	width: 740px;
+	margin-top: 25px;
+}
+.h2 span {
+	padding: 3px 6px 3px 6px;
+	color: #fff;
+	background-color: #7486c6;
+	margin-right: 7px;
+}
+.content, .content1, .content2, .content3, .content5, .content6, .content7, .content8, .content9, .content10, .content11, .content12, .content13, .content14, .content15, .content16, .content17 {
+	margin-top: 15px;
+}
+.content h2, .content1 h2, .content2 h2, .content3 h2, .content5 h2, .content6 h2, .content7 h2, .content8 h2, .content9 h2, .content10 h2, .content11 h2, .content12 h2, .content13 h2, .content14 h2, .content15 h2, .content16 h2, .content17 h2 {
+	margin-bottom: 20px;
+}
+.content p, .content1 p, .content2 p, .content3 p, .content4 p, .content5 p, .content6 p, .content7 p, .content8 p, .content9 p, .content10 p, .content11 p, .content12 p, .content13 p, .content14 p, .content15 p, .content16 p, .content17 p {
+	padding: 5px 15px 5px 15px;	/*上、右、下、左的内边距依次为5px,15px,5px 15px*/
+	text-indent: 2em;
+	margin-right: 30px;
+}
+</style>
+</head>
+<body>
+<div id="slider1" class="slider">
+  <center>
+    <marquee scrollAmount="8" scrollDelay="20" direction="left" width="1200px">
+    <div style="text-align: center"><img src="images/66.jpg" width="250px" height="150px"> <img src="images/67.jpg" width="250px" height="150px"> <img src="images/39.jpg" width="250px" height="150px"> <img src="images/68.jpg" width="250px" height="150px"> <img src="images/69.jpg" width="250px" height="150px"> <img src="images/70.jpg" width="250px" height="150px"></div>
+    <div style="text-align: center"></div>
+    </marquee>
+  </center>
+</div>
+<div id="main_block">
+  <div class="content_main">
+    <h1>South-to-North Water Transfer</h1>
+    <div class="box_details">
+      <p> <img src="images/50.png" alt="" title="" class="right" width="250" height="200"/>“South-to-North Water Transfer Project” is the “South-to-North Water Transfer Project”. It is a strategic project of the People’s Republic of China. It is divided into three lines: east, middle and west. The starting point of the east line project is located in Jiangdu Water Conservancy Project in Yangzhou, Jiangsu Province. The starting point of the middle line project is located in the Danjiangkou Reservoir in the middle and upper reaches of the Han River. It is the four provinces (cities) of Henan, Hebei, Beijing and Tianjin. </p>
+      <p>The concept of the project was initiated in 1952 when Chairman Mao Zedong inspected the Yellow River. Since then, after more than 50 programs have been analyzed and compared, the water transfer program has obtained a large number of valuable results. The South-to-North Water Transfer Project Planning Area covers a population of 438 million people and a water transfer scale of 44.8 billion cubic meters. The total length of the east, middle and west trunk lines of the project is 4,350 kilometers. The total length of the first-phase project of the East and Central Lines is 2,899 kilometers, and the supporting branch of the first-grade and six-provincial branches along the line is about 2,700 kilometers. </p>
+      <p>In September 2012, the resettlement of the Danjiangkou reservoir area in the Middle Route of the South-to-North Water Transfer Project was fully completed. The South-to-North Water Diversion Project mainly solves the problem of water shortage in the northern part of China, especially the Huang-Huai-Hai Basin. The planned population is 438 million. There are three water transfer lines on the east, middle and west lines. Through the connection of the three water transfer lines with the Yangtze, Yellow, Huaihe and Haihe rivers, the overall layout of the “four horizontal and three vertical” is the main layout to facilitate the realization of China. The rational allocation of water resources from north to south and between east and west. </p>
+      <p>The Middle Route of the South-to-North Water Transfer Project and the East Route of the South-to-North Water Transfer Project (Phase I) have been completed and transferred to the northern region. As of now, the West Line project is still in the planning stage and has not started construction.</p>
+    </div>
+    <h2 class="h2"><span>1</span>Historical evolution</h2>
+    <div class="content">
+      <h2>Project proposal</h2>
+      <p>In 1952, when Comrade Mao Zedong inspected the Yellow River, he proposed: "There is more water in the south and less water in the north. If possible, it is possible to borrow some water." This is also the first time that the grand idea of ​​the South-to-North Water Diversion was proposed. </p>
+      <p>On February 16, 1953, Mao Zedong went to Wuhan for the first time after the founding of New China. He inspected the banks of the Han River and visited the East Lake by wooden boat. On the "Yangtze River" ship, Mao Zedong asked Lin Yishan: "There is more water in the south, less water in the north, can you borrow some water to the north?" When the ship arrived in Nanjing, Mao Zedong said to Lin Yishan: The Three Gorges problem is temporarily not considered, I am only the first Touch the bottom, but the work of the South-to-North Water Transfer should be tightened. </p>
+      <p>In August 1958, the "Directive of the Central Committee of the Communist Party of China on Water Conservancy Work" was promulgated, and the South-North Water Transfer was officially proposed for the first time. </p>
+      <p>In 1959, the Chinese Academy of Sciences and the Ministry of Water and Electricity held a "Working Conference on the Study of the South-to-North Water Diversion in the Western Region" in Beijing. The guidelines for the South-to-North Water Diversion Project were: "Also-adjust and apply, comprehensively utilize, make overall plans, and benefit both the North and the South. To make more water, to make the best use of water, and to make the best use of it."</p>
+      <p>In 1979, the "Government Work Report" adopted by the Fifth Session of the National People's Congress officially proposed: "Building a project to channel the Yangtze River to the South-to-North Water Transfer Project north of the Yellow River."</p>
+    </div>
+    <div class="content1">
+      <h2>Project Research Theory</h2>
+      <p>In December 1979, the Ministry of Water Resources formally established the South-to-North Water Transfer Planning Office to coordinate and coordinate the work of the South-to-North Water Transfer Project across the country. </p>
+      <p>In July 1987, the State Planning Commission officially issued a notice and decided to include the West Route Project of South-to-North Water Transfer in the “Seventh Five-Year Plan”. </p>
+      <p>In April 1991, the Fourth Session of the Seventh National People's Congress included the "South-to-North Water Transfer" in the "Eighth Five-Year Plan" and the Ten-Year Plan. </p>
+      <p>In October 1992, the 14th National Congress of the Communist Party of China included the "South-to-North Water Transfer" as one of China's cross-century backbone projects. </p>
+      <p>In December 1995, the South-to-North Water Transfer Project began a comprehensive demonstration. </p>
+      <p>On June 5, 2000, the planning of the South-to-North Water Diversion Project was carried out in an orderly manner. After several decades of research, the overall pattern of the South-to-North Water Diversion Project was designated as the west, middle and east lines, and water was transferred from the upper, middle and lower reaches of the Yangtze River Basin.</p>
+    </div>
+    <div class="content2">
+      <h2>Project approval period</h2>
+      <p>On October 10, 2002, the Standing Committee of the Political Bureau of the CPC Central Committee reviewed and approved the "Master Plan for the South-to-North Water Transfer Project" approved by the State Council. </p>
+      <p>On December 23, 2002, the State Council officially approved the "South-to-North Water Transfer Master Plan." </p>
+    </div>
+    <div class="content3">   
+      <h2>Project construction period</h2>
+      <p>On December 27, 2002, the South-to-North Water Transfer Project officially started. The Jiangsu Sanchabao Project and the Shandong Section Jiping Main Canal Project became the first batch of construction projects for the East Route of the South-to-North Water Transfer Project. </p>
+      <p>On December 30, 2003, the emergency water supply project for the Beijing-Shijiazhuang section of the Middle Route of the South-to-North Water Transfer Project started, marking the official start of the first phase of the South-North Water Transfer Middle Line. </p>
+      <p>On September 26, 2005, the landmark project of the South-to-North Water Transfer Project and the control project of the Danjiangkou Reservoir in the mid-line water source, the Danjiangkou Dam Heightening Project, officially started, marking the entry into the full implementation phase of the South-to-North Water Transfer Project. </p>
+      <p>On September 28, 2008, the emergency water supply project of the Beijing-Shijiazhuang section of the Middle Route of the South-to-North Water Transfer Project was completed. </p>
+      <p>On November 25, 2008, Hubei Province held a mobilization meeting for the pilot project of the Danjiangkou reservoir area in Wuhan, marking the full launch of the pilot project for the Danjiangkou reservoir area in the middle line of the South-to-North Water Transfer Project. </p>
+      <p>On February 26, 2009, the construction of the Xinglong Water Conservancy Project of the Middle Route of the South-to-North Water Transfer Project started, marking the start of the construction of seven provinces and cities in the East and Central Lines of the South-to-North Water Transfer Project. </p>
+      <p>On March 31, 2010, the 54 dam sections of the Danjiangkou dam were all raised to the top, marking a major stage victory for the Danjiangkou dam heightening project. </p>
+      <p>In September 2012, the resettlement of the Danjiangkou Reservoir in the middle line of the South-to-North Water Transfer Project was fully completed. </p>
+    </div>
+    <h2 class="h2"><span>2</span> Planning Plan</h2>
+    <div class="content4">   
+      <h2>Engineering Conception</h2>
+      <p>Since 1952, Chairman Mao Zedong proposed that "there is more water in the south and less water in the north. If possible, it is possible to borrow some water." Since the idea, under the leadership and care of the Party Central Committee and the State Council, the majority of science and technology workers have done A large number of field surveys and surveys have formed a basic plan for water transfer from the east, middle and west lines of the South-to-North Water Transfer Project based on analysis and comparison of more than 50 programs, and have obtained a large number of valuable results. </p>
+      <p>The South-to-North Water Transfer Project mainly solves the problem of water shortage in the northern part of China, especially the Huang-Huai-Hai Basin. The population of the planned area is 438 million. </p>
+      <p>The final water transfer plan of the South-to-North Water Transfer Project is 44.8 billion cubic meters, including 14.8 billion cubic meters on the east line, 13 billion cubic meters on the middle line, and 17 billion cubic meters on the west line. The construction time is about 40-50 years. Upon completion, it will solve the problem of long-term drinking of high-fluorine water and brackish water for more than 7 million people. </p>
+    </div>
+    <div class="content5">   
+      <h2>Overall planning</h2>
+      <p>Recommended three water lines for the east, middle and west lines. Through the connection of three water transfer lines with the Yangtze River, the Yellow River, the Huaihe River and the Haihe River, the overall layout of the “four horizontal and three vertical” is the main structure, which is conducive to the rational allocation of China's water resources to the north and south. The West Line project has not yet started construction. </p>
+    </div>
+    <div class="content6">   
+      <h2>East Line Planning</h2>
+      <p>Using the existing river water northward transfer project in Jiangsu Province, gradually expand the water transfer scale and extend the water supply line. The east line project draws the Yangtze River from Yangzhou in the lower reaches of the Yangtze River, and uses the Beijing-Hangzhou Grand Canal and its parallel rivers to raise water and send it to the north, and connect Hongze Lake, Luoma Lake, Nansi Lake and Dongping Lake. After the Dongping Lake, the water will be transported in two directions: all the way to the north, passing through the Yellow River near the mountain; the other way to the east, through the Jiaodong area, the south of the water to the Yantai and Weihai. The Eastern Line project started the earliest and there are ready-made waterways. </p>
+    </div>
+    <div class="content7">   
+      <h2>Centerline Planning</h2>
+      <p>70% of the water source is converged from the Hanjiang River Basin to the Danjiangkou Reservoir, [8] The Danjiangkou Reservoir, which was expanded after the Danjiangkou Dam was raised, diverted water from the first gate of the Luanchuan Taoyu Canal in Nanyang, Henan Province, and along the Tangbai River Basin in the southwest of Henan Province. After crossing the Yangtze River Basin and the Huaihe River Basin's watershed Fangcheng Pass, the west side passes through the western edge of the Huanghuaihai Plain and passes through the Yellow River at the west of Zhengzhou. It continues north along the west side of the Beijing-Guangzhou Railway and can basically flow to Beijing. </p>
+    </div>
+    <div class="content8">
+      <h2>West Line Planning</h2>
+      <p>Building a dam in the upper reaches of the Yangtze River, the Tongtian River, the tributary Yalong River and the Dadu River, and cutting through the water tunnel of the Bayan Kala Mountain in the watershed of the Yangtze and Yellow Rivers, and diverting the Yangtze River into the upper reaches of the Yellow River. The water supply target of the West Line project is mainly to solve the water shortage problem involving the upper and middle reaches of the Yellow River in the six provinces (autonomous regions) including Qing, Gansu, Ning, Inner Mongolia, Shaanxi and Shanxi, and the Guanzhong Plain in the Weihe River. Combined with the construction of the backbone water conservancy project on the main stream of the Yellow River, it is also possible to supply water to the Gansu Hexi Corridor adjacent to the Yellow River Basin, and to replenish water to the lower Yellow River when necessary. As of now, no construction has started. </p>
+      <p>The east, middle and west lines of the planned water transfer scale plan will have a total water transfer capacity of 44.8 billion cubic meters by 2050, including 14.8 billion cubic meters in the east line, 13 billion cubic meters in the middle line and 17 billion cubic meters in the west line. The entire project will be implemented in phases according to actual conditions. </p>
+    </div>
+    <div class="content9">   
+      <h2 class="h2"><span>3</span>East Line Project</h2>
+      <h2>Overview</h2>
+      <p>The starting point of the east line project is in Yangzhou in the lower reaches of the Yangtze River, and the end point is in Tianjin. </p>
+      <p>Water supply scope of the east line project: involving five provinces and cities of Jiangsu, Anhui, Shandong, Hebei and Tianjin. Specifically: the middle and lower reaches of the Huaihe River except the Lixia River and the north and the north and the northern highlands; the two sides of the Huaihe River in Anhui Province, the Xinyi River on the east of Huaibei City, and parts of Tianchang County; Shandong Province Around Nansi Lake, Yihanzhuang Canal and Liangji Canal side, some cities in Jiaodong area and Lubei non-Yellow irrigation area; Hebei Heilongjiang Yundong area; Tianjin and the suburbs. The east line project uses the canals of the Yuan Dynasty. The purpose is to alleviate the shortage of water resources in the five provinces and municipalities of Jiangsu, Anhui, Shandong, Hebei and Tianjin. </p>
+      <p>The first phase of the East Line has a total of 68 design unit projects, and 29 projects have been completed. It is expected that the main project directly related to water supply will be basically completed in March 2014. At that time, the first phase of the East Line project will basically have water capacity. Before the end of June 2014, the work on water quality compliance and water inspection will be basically completed. The first phase of the East Route of the South-to-North Water Transfer Project is scheduled to be officially opened in the third quarter of 2013. At that time, the Yangtze River will be transferred to the Shandong Peninsula and the Lubei area, and the areas along the water conveyance areas such as Shandong, Jiangsu and Anhui will benefit. </p>
+    </div>
+    <div class="content10">   
+      <h2>Comprehensive features</h2>
+      <p>The East Route Project of South-to-North Water Transfer, the National Strategic East Line Project, referred to as the East Line Project, refers to the national-level inter-provincial project that transports water from production and domestic water to the North China region from Jiangsu, Shandong, and Hebei provinces. Regional project. </p>
+      <p>South-Shuibei North Route Project Planning" was revised in 2001. The East Line Project raised water from the main stream of the lower reaches of the Yangtze River through the Jiangdu Water Control Project in Yangzhou City, Jiangsu Province, and was transferred northward along the Beijing-Hangzhou Grand Canal to the east of the Huang-Huai-Hai Plain. Production and domestic water are provided in the Jiaodong area and the Beijing-Tianjin-Hebei region. In the water supply area, there are 25 cities at the city level and above in the Huaihe River, Haihe River and Yellow River Basin. According to statistics in 1998, the population of the region is 118 million and the cultivated land is 8.8 million hectares. </p>
+      <p>The east line project plans to divert water from the main stream of the Yangtze River near Yangzhou, Jiangsu Province, and use the Beijing-Hangzhou Grand Canal and its parallel river water to connect Hongze Lake, Luoma Lake, Nansi Lake and Dongping Lake, and serve as a reservoir. After pumping water into the Dongping Lake step by step, the water is divided into two ways. After crossing the Yellow River all the way, it will flow to Tianjin, and the main line of water transportation from the Yangtze River to Tianjin Beidagang Reservoir will be about 1156 kilometers long. The other road will lead the Yellow River to the east of the Jiaodong area. </p>
+      <p>The East Route Project of South-to-North Water Transfer has created the largest pumping station group in the world, the East Line Pumping Station Group Project. The project implementation is divided into three phases. In the first phase, a total of 21 pumping stations will be built, with a construction period of 6 years. In the first phase of the project, 13 pumping stations will be built on the basis of the first phase of the project, with a construction period of 3 years. In the third phase of the project, 17 pumping stations will be built on the basis of the second phase of the project, with a construction period of 5 years. The main projects of the first, second and third phases of the East Route of the South-to-North Water Transfer Project totaled 42 billion yuan. </p>
+    </div>
+    <h2 class="h2"><span>4</span>Medium Line Project</h2>
+    <div class="content11">   
+      <h2>Overview</h2>
+      <p>In the 1959 "Report on the Essentials of the Yangtze River Basin Utilization Plan", it is proposed that the general layout of the South-to-North Water Diversion Project is to transfer water from the upper, middle and lower reaches of the Yangtze River. The mid-line project diverted water from the Danjiangkou Reservoir, and the prospective water was transferred from the main stream of the Yangtze River. In September 1958, when the Ministry of Water and Electricity approved the preliminary design of the manual valve manual valve for the Danjiangkou Water Control Project, it clarified the task of arranging the Han River in the Tangbai River Basin and the Hanjiu Yellow River. </p>
+      <p>In 1968, the Danjiangkou Reservoir was filled with water, and in 1973, the head of the Qingquangou Yindan Irrigation District was completed (water supply capacity of 100 cubic meters per second). In 1974, the main channel of the Han Dynasty was built. The design of the diversion channel was 500 cubic meters. M / s, up to 1000 cubic meters / sec in the later period, while the construction of the 8 km long main canal after the gate. In October 1978, the Ministry of Water and Electricity issued a document "Notice on Strengthening the Planning of the South-to-North Water Diversion" with urgent requirements, and requested that the planning and revision of the South-to-North Water Diversion be urgently carried out. The relevant units further carried out the planning work for the South-to-North Water Diversion Project. </p>
+      <p>In 1980, the Ministry of Water Resources organized leaders, experts, and professors from relevant provinces, municipalities, ministries, scientific research departments, and universities to conduct a comprehensive survey of the water source area of ​​the middle-line project and the route from the head to Beijing. Before and after the investigation, the Yangtze River Committee put forward the "Report on the Essentials of the Middle Route of the South-to-North Water Transfer Project" and the supplementary report. A mid-line engineering planning and research plan was formulated, which was officially issued by the Ministry of Water Resources in 1981. Afterwards, according to the plan, the Yangtze River Committee and the Ministry of Geology and Mineral Resources carried out the engineering geological survey of the Yellow River in the south and north respectively. The Institute of Geography of the Chinese Academy of Sciences conducted an analysis of the drought in the Yangtze River, Huai, Huang and Hai. </p>
+      <p>In 1983, the State Planning Commission listed the South-to-North Water Diversion Middle Line Project as a key project of the national “6th Five-Year Plan”. The Yangtze River Committee cooperated with various provinces and cities. In 1987, it completed the "South-to-North Water Transfer Mid-line Planning Report", focusing on the initial scale water diversion plan of the Danjiangkou Reservoir. The organization review of the Ministry of Water Resources was carried out in two phases according to the plan. After the first phase of the review, the Yangtze River Committee made supplementary research according to the requirements of the meeting. It was officially reported in 1988 and reported to the department heads, but the second stage review was not conducted. In October 1990, the Ministry of Water Resources issued a document requesting “to complete the feasibility study and design task book for the completion of the Danjiangkou water conservancy project and the water transfer plan”. </p>
+      <p>In November 1991, the Yangtze River Committee proposed the "South-to-North Water Transfer Mid-line Planning Report (revised in September 1990)" and the "Preliminary Feasibility Study Report of the South-to-North Water Diversion Middle Line Project", which clarified that the mid-line project is based on urban life and industrial water supply. Agriculture and other water use are no longer required for navigation. The scope of water supply should include Tianjin, and it is recommended to increase the water transfer plan for the Danjiangkou Reservoir Dam. The Ministry of Water Resources organized a review of the above two reports, agreeing in principle, and also pointed out the need for additional research in the next phase of work. </p>
+      <p>At the end of 1992, the Yangtze River Committee proposed a feasibility study report for the mid-line project. The Ministry of Water Resources and the international consulting company organized major topics such as adjustable water volume, storage measures, main canals, yellowing projects, and investment estimates. After the method review, the Ministry of Water Resources reviewed and approved the feasibility study report in early 1994, and agreed to increase the Danjiangkou water conservancy hub, with an annual water transfer plan of 14.7 billion cubic meters. This program has also been endorsed by the State Planning Commission and the five provinces and cities of Beijing, Tianjin, Hebei, Henan and Hubei. </p>
+      <p>In 1995, the State Environmental Protection Administration officially approved the Environmental Impact Report of the Middle Route of the South-to-North Water Transfer Project. </p>
+      <p>In 1995, the State Council decided that the three lines of East, Central and West were organized by the Ministry of Water Resources and organized by the State Planning Commission. By March 1998, the conclusion was that the East, Central and West lines of the South-to-North Water Diversion were necessary. The project is designed to increase the water supply of the Danjiangkou Reservoir dam and the main trunk. The Safin flow rate is 630 cubic meters per second, the flow rate is 800 cubic meters per second, and the water transfer is 14.5 billion cubic meters. </p>
+      <p>In 1994, the Ministry of Water Resources reviewed and approved the “Local Sacrificial Research Report of the Middle Route of the South-to-North Water Transfer Project”. In the “Examination Opinions”, it was pointed out: “The next stage should be carried out to carry out the necessary supplementary work, and the overall design of the main canal and the Danjiangkou Reservoir continued. The preliminary design of the individual projects such as construction was submitted separately for review." According to this request, the preliminary design work was carried out by the relevant provinces and cities along the Yangtze River Committee and the main canal. </p>
+      <p>On March 26, 2010, the largest artificial canal in China, the middle line of the South-to-North Water Transfer Project, officially broke ground. </p>
+      <p>In 2013, the main project of the first phase of the South-to-North Water Transfer Project was completed. After 2014, it was the first water-passing project. The “Yangtze River Water” will be replenished to the Beijing-Tianjin region. If the main pressure of the East Line project is pollution control, then the main problem of the mid-line project is immigration. </p>
+      <p>On the afternoon of December 12, 2014, the middle line of the South-to-North Water Transfer Project, which was 1432 kilometers long and lasted 11 years, was officially opened to the water, and the Yangtze River water officially entered Beijing. The water source Danjiangkou Reservoir has water quality maintained above the national Class II water quality all year round. The “double closed” channel design ensures water quality along the route. After passing through the water, it can transport 9.5 billion cubic meters of water per year to the north, equivalent to 1/6 of the Yellow River, basically alleviating the serious shortage of water in the north. </p>
+    </div>
+    <div class="content10">
+      <h2>Comprehensive features</h2>
+      <p>The Middle Route of the South-to-North Water Transfer Project, which draws water from the bank of the east bank of the Danjiangkou Reservoir in the middle and upper reaches of the Hanjiang River, the largest tributary of the Yangtze River, through the watershed of the Yangtze River Basin and the Huaihe River Basin, and the excavation channel along the western edge of the Tangbai River Basin and the Huanghuaihai Plain. In Wangcun, Fuyang City, Henan Province, the tunnel passes through the Yellow River, along the west side of the Beijing-Guangzhou Railway, and flows to the water supply project of the Beijing Summer Palace. </p>
+      <p>The adjustable water volume of the mid-line project is completed according to the scale of the Danjiangkou Reservoir in the later stage. Under the condition of 170 meters of normal water level, considering the development level of 2020, some compensation projects should be made in the middle and lower reaches of the Han River to ensure the development of industrial and agricultural development, shipping and After environmental water use, the average annual adjustable water output is 14.14 billion cubic meters, generally dry years (guarantee rate of 75%), and the adjustable water output is about 11 billion cubic meters. </p>
+      <p>At 14:32 on December 12, 2014, the Middle Route of the South-to-North Water Transfer Project was officially opened. The choice of 14:32 is separate, which means that the total length of the main channel of the South-North Water Transfer Project is 1432 kilometers. </p>
+      <p>The cost of the Middle Route of the South-to-North Water Transfer Project: As of the end of June 2009, the investment in the first phase of the South-to-North Water Diversion Project has been 58.97 billion yuan, with an accumulated investment of 31.43 billion yuan. As of the end of July 2014, the South-North Water Transfer Office of the State Council has issued a total of The first-phase project of the mid-line project invested 252.5 billion yuan, and the investment in construction projects totaled 249.1 billion yuan. </p>
+    </div>
+    <h2 class="h2"><span>5</span>Engineering Dispute</h2>
+    <div class="content12">   
+      <h2>Water quality status</h2>
+      <p>According to the water resources protection of the South-to-North Water Transfer Project in the South-to-North Water Transfer Project jointly issued by the South-to-North Water Transfer Office and the Ministry of Environmental Protection of the State Council, the water quality of the reservoir area and the inbound rivers as a whole is excellent. </p>
+      <p>In China, drinking water should meet the minimum requirements for Class III water. According to the report, the water quality of the Taoyuan water intake of Danjiangkou Reservoir is higher than that of Class III water. The water quality compliance rate of the main inflow rivers is 97.4%. The Danjiangkou reservoir area is mostly from the Han River, and the water quality of the Hanjiang reservoir water, which accounts for 90% of the total storage water volume, is stable. The water quality of the Danjiangkou reservoir is also stable. </p>
+      <p>The non-standard section is mainly located in the river section with small runoff and flowing through the lower reaches of the town, which has little impact on the water quality of the Danjiangkou Reservoir. For example, the five rivers crossing Shiyan City, namely Shending River, Weihe River, Weihe River, Guanshan River and Jianhe River, although the water volume is very small, only accounted for less than 1% of the total water storage. After the current remediation, the five rivers are not black. Not stinky, the water quality has improved significantly, some have become Class III water, and others have changed from Class V and Class V to Class IV. </p>
+      <p>On October 14, 2014, Gao Juncai, Director of the Rural Economic Development Department of the National Development and Reform Commission, responded to the serious water pollution problem of the South-to-North Water Transfer Project. The initial planning and design of the South-to-North Water Transfer Project is based on urban water supply, taking into account agricultural and ecological water. From the middle line of the South-to-North Water Transfer Project, the water quality of the Danjiangkou Reservoir is relatively good. It is also found that some tributaries have water pollution problems, but they do not affect the overall situation. </p>
+      <p>For the water pollution problems in individual places, individual pollution points and individual tributaries, the Development and Reform Commission and other relevant departments attach great importance to it, and are carrying out serious governance, and will take further necessary preventive and remedial measures. The water quality problems in the Middle East and the Middle East of the South-to-North Water Transfer Project have generally met the expected planning and design goals. </p>
+      <div class="content13">     
+        <h2>Environmental destruction</h2>
+        <p>1. The “three lines” simultaneously divert water, which will lead to incalculable changes in the ecology along the Yangtze River basin, which is not conducive to protecting the existing ecology along the Yangtze River. It may lead to a lower carrying capacity of the channel during the dry season of the Yangtze River. The scope and extent of its ecological impact has greatly exceeded the understanding of Chinese “experts”. </p>
+        <p>2. The combined effect of the mid-line project and the Three Gorges Water Control Project has caused changes in the environment of the Han River and the middle and lower reaches of the Yangtze River, which will cause incalculable losses to Wuhan. </p>
+        <p>3. The influence of water transfer from the east line project on the Yangtze River estuary area led to secondary salinization of the northern irrigation area. </p>
+      </div>
+      <div class="content14">     
+        <h2>Negative impact</h2>
+        <p>First, the project of South-to-North Water Transfer has caused widespread social controversy. Opponents mainly believe that the South-to-North Water Diversion Project is costly and involves a large number of immigration problems. The amount of water transfer is too small to play economic benefits, excessive water transfer, and dry season. It may cause insufficient water in the Yangtze River, affecting the shipping of the Yangtze River, and deepening the salt tide in the Yangtze River estuary, which is more likely to trigger the natural environmental crisis in the Yangtze River Basin. </p>
+        <p>Second, after the implementation of the South-to-North Water Diversion Project, the original flood storage and power generation of the Yangtze Three Gorges Water Control Project has been controversial. The simultaneous effects of the Three Gorges Project and the South-to-North Water Diversion may have incalculable impacts on the middle and lower reaches of the Yangtze River (including ecology and shipping), especially during the dry and dry seasons. </p>
+        <p> Third, because of the drought in southwestern China in early 2010, Liu Shukun, chief engineer of the Institute of Hydraulics of the China Institute of Water Resources and Hydropower Research and the chief of the Disaster and Environmental Research Center, questioned the South-to-North Water Transfer Project. He believes that in the southwestern region, when there is a drought that has been difficult for a hundred years, the hydrological data should be revised. The frequency of drought should be reassessed. </p>
+        <p>Fourth, the middle line of the South-to-North Water Transfer Project has nearly 330,000 people relocated in Henan Province, and the relocation has brought turbulence to the immigrant life. Some immigrants have only enough to buy a piece of cultivated land after buying the government-provided housing because they have insufficient compensation. </p>
+        <p>V. The cost of the South-to-North Water Transfer Project is already higher than the existing seawater desalination cost. The lowest seawater desalination cost is about 3 yuan, and the current cost of the South-to-North Water Transfer Project is about 10 yuan. It is reported that it has reached 18 yuan. </p>
+        <p>Six. In the first half of 2011, Hunan, Hubei and Jiangxi in the three lower reaches of the Three Gorges suffered unprecedented drought conditions. In Hubei Province alone, there are more than 1,300 reservoirs below the dead water level. The water levels of Poyang Lake, Dongting Lake and Hongze Lake are seriously low. The largest freshwater lake in China has only one-tenth of the water area. This series of events has caused widespread doubts about the Three Gorges Dam. </p>
+      </div>
+      <h2 class="h2"><span>6</span>Ice problem response</h2>
+      <div class="content16">     
+        <h2>Rumors and Concerns</h2>
+        <p>The total length of the main line of the Central Line and the Tianjin Main Canal are 1432 kilometers. The geographical climate varies greatly along the route. There is a problem of winter channel freezing in the north section of Anyang. After the main channel is frozen, the water delivery capacity will naturally drop, affecting the water delivery. In addition, if the main canal is not properly operated during the ice age, ice congestion and ice dam accidents may occur, which threatens the safety of the channel. </p>
+        <p>A netizen posted a message saying that "the north is too cold, and the water is frozen into ice." Some netizens said that "the surface of the channel in Hexishan, Hebei Province has frozen, and the viscosity coefficient near the ice surface is particularly large. Finally, it will freeze completely, and a drop of water may not reach Beijing." </p>
+        <p>The Office of South-to-North Water Transfer said that the freezing situation in the north has been considered in the design and construction. The project not only has corresponding anti-freezing equipment, but also de-icing measures. In December 2014, there were about 10 cm of surface ice in some sections of the water flow, but the water under the ice was flowing. It is expected that on December 27th, after 15 days of long-distance trek, the Beijingers will drink the Yangtze River water as scheduled. </p>
+        <div class="content17">       
+          <h2>Normal Operational Technology</h2>
+          <p>The construction department has fully considered the temperature factors in the north in the design and construction. Officials have done statistics. Due to the surface icing on the surface of the open channel in the north of Anyang, Henan, the water delivery capacity will drop to 60% of the normal situation, but the water can be delivered normally. </p>
+          <p>According to the scheme, the water delivery method during the glacial period is: for the canal with the temperature of the ice cap, control the water gate along the line to make the ice cover as early as possible, because the ice cover is relatively stable and safe; for the ice cover can not be formed In the canal section, the ice block is cleaned in time by setting the ice blocking line and the ice-discharging block to prevent the formation of ice dams or ice plugs. These measures can fully ensure the smooth flow of water along the way. </p>
+          <p>The Yangtze River water will enter the Lugou Bridge and the West Fourth Ring culvert after entering the Beijing urban area. The average depth of these pipelines is about 8 meters underground, and the water is always in a flowing state. The water temperature is about 10 degrees Celsius and will not freeze. ice. However, when the river runs from the dark culvert to the ground and enters the Tuancheng Lake regulation pool, it will form a clear water surface. The water surface of the adjustment pool can be frozen, but for the exposed gates and lock chambers, a melting ice pump is installed. Stir the water 5 meters deep in the pool to prevent the surface from freezing. </p>
+          <p>The Beijing South Water North Office also exemplified that, for example, the internal pool in Beijing-Daning surge tank, the minimum temperature at night is -5 °C, but the water in the pool is rippling and there is no ice. There are two rows of “founches” on the inner wall of the pool, which are specially used to stir the water. After the water is officially opened, it is considered that if the water surface freezes, it will affect the operation of the water inlet and the backwater gate of the surge tank pumping station. Two antifreeze pump devices are installed at the bottom of the tank to stir the water surface to prevent freezing ice. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
