@@ -35,6 +35,7 @@ body {
 .all-left {
     width: 750px;
     float: left;
+    height: 5760px;
     background-color: rgba(255,255,255,1.00);
     padding-right: 20px;
 }
@@ -146,7 +147,7 @@ body {
 .all-right {
     float: right;
     width: 240px;
-    height: 5720px;
+    height: 5760px;
     background-color: rgba(251,251,251,1.00);
 }
 .main {

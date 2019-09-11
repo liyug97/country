@@ -36,6 +36,7 @@ body {
     float: left;
     background-color: rgba(255,255,255,1.00);
     padding-right: 20px;
+    height: 6760px;
 }
 .renwu{
     margin-left: 20px;
@@ -148,7 +149,7 @@ body {
 .all-right {
     float: right;
     width: 240px;
-    height: 6630px;
+    height: 6760px;
     background-color: rgba(251,251,251,1.00);
 }
 .main {

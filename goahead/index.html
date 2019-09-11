@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>砥砺前行</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/playerslider.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	// 焦点图片水平滚动
+	$("#slider1").Xslider({
+		// 默认配置
+		affect: 'scrollx', //效果  有scrollx|scrolly|fade|none
+		speed: 800, //动画速度
+		space: 6000, //时间间隔
+		auto: true, //自动滚动
+		trigger: 'mouseover', //触发事件 注意用mouseover代替hover
+		conbox: '.conbox', //内容容器id或class
+		ctag: 'div', //内容标签 默认为<a>
+		switcher: '.switcher', //切换触发器id或class
+		stag: 'a', //切换器标签 默认为a
+		current:'cur', //当前切换器样式名称
+		rand:false //是否随机指定默认幻灯图片
+	});
+	// 焦点图片垂直滚动
+	$("#slider2").Xslider({
+		affect:'scrolly',
+		ctag: 'div',
+		speed:400
+	});
+	// 焦点图片淡隐淡现
+	$("#slider3").Xslider({
+		affect:'fade',
+		space: 1000,
+		ctag: 'div'
+	});
+	// 选项卡
+	$("#slider4").Xslider({
+		affect:'none',
+		ctag: 'div',
+		speed:10
+	});
+	$("#slider5").Xslider({
+		affect:'fade',
+		ctag: 'div'
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="main">
+  <div class="main_top"> 
+    <div class="top_title" style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold;">砥砺前行</div>
+	  <div class="logo"><img src="images/logo.jpg" height="80" width="80"></div>
+    <div class="top_nav">
+      <ul>
+        <li class="first"><a href="index.html">首页</a></li>
+        <li><a href="education.html">教育</a></li>
+        <li><a href="economic.html">经济</a></li>
+        <li><a href="culture.html">文化</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+		<li><a href="english/index.html">英文版本</a></li>
+      </ul>
+    </div>
+	  <div id="slider3" class="slider1">
+   <div class="conbox">
+    <div><a href="#"><img src="images/2.jpg" width="1200" height="300"/></a></div>
+    <div><a href="#"><img src="images/5.jpg" width="1200" height="300"/></a></div>
+    <div><a href="#"><img src="images/27.jpg" width="1200" height="300"/></a></div>
+    <div><a href="#"><img src="images/25.jpg" width="1200" height="300"/></a></div>
+  </div>
+</div>
+  </div>
+  <div class="photo">
+	</div>
+  <div class="item">
+    <div class="style">
+      <div class="style_title">中国风</div>
+      <div class="style_photo">
+		  <img src="images/style.jpg" width="250" height="250"/>
+		</div>
+      <div class="style_more"><a href="style.html">more</a></div>
+    </div>
+    <div class="economic">
+      <div class="economic_title">中国行</div>
+      <div class="economic_photo"> <img src="images/road.jpg" width="250" height="250"/></div>
+      <div class="economic_more"><a href="trip.html">more</a></div>
+    </div>
+    <div class="military">
+      <div class="military_title">中国美食</div>
+      <div class="military_photo"> <img src="images/food.jpg" width="250" height="250"/></div>
+      <div class="military_more"><a href="food.html">more</a></div>
+    </div>
+    <div class="culture">
+      <div class="culture_title">中国文化</div>
+      <div class="culture_photo"> <img src="images/culture.jpg" width="250" height="250"/></div>
+      <div class="culture_more"><a href="qin.html">more</a></div>
+    </div>
+  </div>
+  <div class="news">
+    <div class="news_left">
+      <div class="left_title">影片欣赏</div>
+      <div class="left_movie">
+		  <video width="550" height="420" controls="controls">
+			  <source src="images/videosource.mp4" type="video/mp4"></source>
+		  </video>
+		</div>
+      <div class="left_review"><a href="review.html">影评</a></div>
+    </div>
+    <div class="news_middle">
+      <div class="middle_title">经典留影</div>
+      <div class="middle1">
+        <div class="middle1_photo"> <img src="images/11.jpg" width="200" height="120"/></div>
+        <div class="middle1_word"><a href="middle1.html">more</a>
+        </div>
+      </div>
+		<br>
+		<hr>
+      <div class="middle2">
+        <div class="middle2_photo"> <img src="images/12.jpg" width="200" height="120"/></div>
+        <div class="middle2_word"><a href="middle2.html">more</a>
+        </div>
+	  </div>
+		<br>
+		<hr>
+      <div class="middle3">
+        <div class="middle3_photo"> <img src="images/13.jpg" width="200" height="120"/></div>
+        <div class="middle3_word"><a href="middle3.html">more</a>
+        </div>
+      </div>
+      </div>
+    <div class="news_right">
+      <div class="right1">
+        <div class="right1_title">媒体报道</div>
+        <div class="right1_word">
+          <table width="100%" border="0">
+            <tbody>
+              <tr>
+				  <td><div class="new1" align="left"><a href="right.html">习近平引领中国特色大国外交不断开拓新局面</a></div><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+			  <tr>
+				  <td>
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+				  </td>
+				</tr>
+              <tr>
+                <td><div class="new2" align="left"><a href="right2.html">一飞冲天精确入轨 中国民营航天露峥嵘</a></div><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+				<tr>
+				  <td>
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+				  </td>
+				</tr>
+              <tr>
+                <td><div class="new3" align="left"><a href="right3.html">世界最大口径射电望远镜（FAST）</a></div><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+				<tr>
+				  <td>
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+				  </td>
+				</tr>
+              <tr>
+				  <td><div class="new4" align="left"><a href="right4.html">中国发展成就惊人 国际影响力有目共睹</a></div><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+				<tr>
+				  <td>
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+				  </td>
+				</tr>
+              <tr>
+                <td><div class="new5" align="left"><a href="right5.html">中国高铁发展惊人，震惊世界</a></div><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+            
+			 
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="right2">
+        <div class="right2_title">政策解读</div>
+        <div class="right2_word">
+          <table width="100%" border="0">
+            <tbody>
+              <tr>
+				  <td><p align="left"><a href="right6.html">中国特色社会主义理论体系为何不包括毛泽东思想？</a></p><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+			<tr>
+				  <td>
+				  </td>
+				</tr>
+              <tr>
+				  <td><p align="left"><a href="right7.html">假日处：带薪年休制度与黄金周是否取消无关</a></p><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+				</tr>
+				<tr>
+				  <td>
+				  </td>
+				</tr>
+              <tr>
+				  <td><p align="left"><a href="right8.html">党对反腐败规律的认识进一步深化</a></p><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+            </tr>
+				<tr>
+				  <td>
+				  </td>
+				</tr>
+              <tr>
+				  <td><p align="left"><a href="right9.html">制约与监督：权力在阳光下有序运行的保障</a></p></td>
+            </tr>
+     
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="bottom1">
+		<div class="bottom1_title">&nbsp;&nbsp;每日学习</div>
+        <div id="slider5" class="slider">
+        <div class="conbox">
+          <div><a href="#" title=""><img src="images/bottom1-1.jpg" width="260" height="400" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-2.png" width="260" height="400" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-4.jpg" width="260" height="400" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-3.png" width="260" height="400" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-5.jpg" width="260" height="400" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-6.jpg" width="260" height="400" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-7.jpg" width="260" height="400" /></a></div>
+        </div>
+        <div class="switcher"> <a href="#" class="cur">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> </div>
+      </div>
+    </div>
+    <div class="bottom2">
+      <div class="bottom2_title">一周科技</div>
+      <div class="bottom2_word">
+        <table width="100%" border="0">
+          <tbody>
+			  <tr>
+				  <td>&nbsp;
+				  </td>
+			  </tr>
+            <tr>
+              <td><br>
+               <p align="left">“振华30”起重船：港珠澳大桥工程上的“大国重器”</p><hr style="background-color: #171717;height:1px;border: none;"></td>
+            </tr>
+            <tr>
+              <td>
+                <p align="left">“墨子号”量子卫星性能远超预想，试验任务已提前完成！</p><hr style="background-color: #171717;height:1px;border: none;"></td>
+            </tr>
+            <tr>
+              <td>
+                
+                <p align="left">“中国天眼”将建扩展阵，为寻找地外生命“做功课”</p><hr style="background-color: #171717;height:1px;border: none;"></td>
+            </tr>
+            <tr>
+              <td>
+                
+                <p align="left">高铁复兴号：驶向中国标准的全新运输时代</p><hr style="background-color: #171717;height:1px;border: none;"></td>
+            </tr>
+            <tr>
+              <td>
+               <p align="left">港珠澳大桥：世界奇迹背后的中国智慧</p><hr style="background-color: #171717;height:1px;border: none;"></td>
+            </tr>
+          </tbody>
+        </table>
+		  <div class="bottom2_more"><a href="bottom2-more.html">more</a></div>
+      </div>
+    </div>
+    <div class="bottom3">
+      <div class="bottom3_title">文化广场</div>
+      <div class="bottom3_word">
+        <table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+			  <tr>
+				  <td>&nbsp;
+				  </td>
+			  </tr>
+            <tr>
+              <td style="font-size: 14px; font-weight: bold;">杭州：打造大运河文化带的“八达岭”</td>
+            </tr>
+            <tr>
+              <td>
+              <span style="font-size: 14px;text-align:justify; text-justify:inter-ideograph" > <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当我们鸟瞰中国大地，长城万里莽莽，形似一撇，运河波澜不惊，壮如一捺。长城和运河，用刚硬与柔美，以粗狂兼婉约，共同书写与诠释了一个大写的中国字“人”。杭州，不仅是大运河这一捺上通江达海的关键“顿笔”，更是大运河运济天下的“出峰”所在。</p></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+	<div class="bottom3_photo">
+		<div class="photo1"> <img src="images/15.jpg" width="80" height="80"/></div>
+		<div class="photo2"> <img src="images/19.jpg" width="80" height="80"/></div>
+		<div class="photo3"> <img src="images/16.jpg" width="80" height="80"/></div>
+		<div class="photo4"> <img src="images/18.jpg" width="80" height="80"/></div>
+		<div class="photo5"> <img src="images/20.jpg" width="80" height="80"/></div>
+		<div class="photo6"> <img src="images/17.jpg" width="80" height="80"/></div>
+		</div>
+	<div class="bottom3_more"><a href="bottom3-more.html">more</a></div>
+   </div>
+    <div class="bottom4">
+		<div class="bottom4_title">时代楷模</div>
+		<div class="bottom4_word"><table width="100%" border="0">
+  <tbody>
+	 <tr>
+      <td>&nbsp;</td>
+    </tr>
+	  <tr>
+				  <td>&nbsp;
+				  </td>
+			  </tr>
+    <tr>
+		<td style="font-size: 14px; font-weight: bold;">张富清：一位老英雄的初心本色</td>
+    </tr>
+    <tr>
+      <td><span style="font-size: 14px"><p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;老英雄张富清60多年深藏功名，一辈子坚守初心、事迹感人。在部队，他保家卫国；到地方，他为民造福。他用自己的朴实纯粹书写了精彩人生，那天，张富清第二次来到天安门，他撑着轮椅，有些艰难地站起挺直着身体，面对人民英雄纪念碑行了标准的军礼。</p></span></td>
+    </tr>
+	  <tr>
+		  <td><img src="images/21.jpg" height="160" width="250"></td>
+	  </tr>
+	  
+</tbody>
+</table>
+			<div class="bottom4_more"><a href="bottom4-more.html">more</a></div>
+</div>
+	  </div>
+  </div>
+	<div class="copyright"><br>Copyright © 2019 little planet All Rights Reserved</div>
+</div>
+</body>
+</html>

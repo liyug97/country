@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 12px;
+    text-align: center;
+	margin: 0 auto;
+	padding: 0px;
+	background: url("../images/5-13050G33952.gif");
+}
+.main{
+	width: 1000px;
+	height: 3000px;
+	margin: 0 auto;
+}
+.main2{
+	width: 1000px;
+	height: 1200px;
+	margin: 0 auto;
+}
+.title{
+	width: 1000px;
+	height: 50px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 30px;
+	font-weight: bolder;
+	margin-top: 50px;
+}
+.title_time{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 18px;
+	text-align: right;
+}
+.article{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+}
+.article span{
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 20px;
+    font-weight: bold;
+}
+.photo{
+	width: 1000px;
+	height: 400px;
+}
+.photo1{
+	width: 480px;
+	height: 400px;
+}
+.photo2{
+	width: 480px;
+	height: 400px;
+	margin-left: 520px;
+	margin-top: -400px;
+}

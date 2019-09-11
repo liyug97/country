@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Go ahead</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/playerslider.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	// 焦点图片水平滚动
+	$("#slider1").Xslider({
+		// 默认配置
+		affect: 'scrollx', //效果  有scrollx|scrolly|fade|none
+		speed: 800, //动画速度
+		space: 6000, //时间间隔
+		auto: true, //自动滚动
+		trigger: 'mouseover', //触发事件 注意用mouseover代替hover
+		conbox: '.conbox', //内容容器id或class
+		ctag: 'div', //内容标签 默认为<a>
+		switcher: '.switcher', //切换触发器id或class
+		stag: 'a', //切换器标签 默认为a
+		current:'cur', //当前切换器样式名称
+		rand:false //是否随机指定默认幻灯图片
+	});
+	// 焦点图片垂直滚动
+	$("#slider2").Xslider({
+		affect:'scrolly',
+		ctag: 'div',
+		speed:400
+	});
+	// 焦点图片淡隐淡现
+	$("#slider3").Xslider({
+		affect:'fade',
+		space: 2000,
+		ctag: 'div'
+	});
+	// 选项卡
+	$("#slider4").Xslider({
+		affect:'none',
+		ctag: 'div',
+		speed:10
+	});
+	$("#slider5").Xslider({
+		affect:'fade',
+		ctag: 'div'
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="main">
+  <div class="main_top">
+    <div class="top_title" style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold;">Go ahead</div>
+	  <div class="logo"><img src="images/logo.jpg" height="80" width="80"></div>
+    <div class="top_nav">
+      <ul>
+        <li class="first"><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="economic.html">Economic</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+		<li><a href="../index.html">Chinese</a></li>
+      </ul>
+    </div>
+	  <div id="slider3" class="slider1">
+   <div class="conbox">
+    <div><a href="#"><img src="images/2.jpg" width="1200" height="300"/></a></div>
+    <div><a href="#"><img src="images/5.jpg" width="1200" height="300"/></a></div>
+    <div><a href="#"><img src="images/27.jpg" width="1200" height="300"/></a></div>
+    <div><a href="#"><img src="images/25.jpg" width="1200" height="300"/></a></div>
+  </div>
+</div>
+  </div>
+  <div class="photo">
+	</div>
+  <div class="item">
+    <div class="style">
+      <div class="style_title">Chinese style</div>
+      <div class="style_photo">
+		  <img src="images/style.jpg" width="250" height="250"/>
+		</div>
+      <div class="style_more"><a href="style.html">more</a></div>
+    </div>
+    <div class="economic">
+      <div class="economic_title">China Road
+		 </div>
+      <div class="economic_photo"> <img src="images/road.jpg" width="250" height="250"/></div>
+      <div class="economic_more"><a href="trip.html">more</a></div>
+    </div>
+    <div class="military">
+      <div class="military_title">Chinese food</div>
+      <div class="military_photo"> <img src="images/food.jpg" width="250" height="250"/></div>
+      <div class="military_more"><a href="food.html">more</a></div>
+    </div>
+    <div class="culture">
+      <div class="culture_title">Chinese culture</div>
+      <div class="culture_photo"> <img src="images/10.jpg" width="250" height="250"/></div>
+      <div class="culture_more"><a href="qin.html">more</a></div>
+    </div>
+  </div>
+  <div class="news">
+    <div class="news_left">
+      <div class="left_title">Film Appreciation</div>
+      <div class="left_movie">
+		  <video width="550" height="400" controls="controls">
+			  <source src="images/videosource.mp4" type="video/mp4"></source>
+		  </video>
+		</div>
+      <div class="left_review"><a href="review.html">Film critics</a></div>
+    </div>
+    <div class="news_middle">
+      <div class="middle_title">Classic Photography</div>
+      <div class="middle1">
+        <div class="middle1_photo"> <img src="images/11.jpg" width="200" height="120"/></div>
+        <div class="middle1_word"><a href="middle1.html">more</a>
+        </div>
+      </div>
+		<br>
+		<hr>
+      <div class="middle2">
+        <div class="middle2_photo"> <img src="images/12.jpg" width="200" height="120"/></div>
+        <div class="middle2_word"><a href="middle2.html">more</a>
+        </div>
+	  </div>
+		<br>
+		<hr>
+      <div class="middle3">
+        <div class="middle3_photo"> <img src="images/13.jpg" width="200" height="120"/></div>
+        <div class="middle3_word"><a href="middle3.html">more</a>
+        </div>
+      </div>
+    </div>
+    <div class="news_right">
+      <div class="right1">
+        <div class="right1_title">Media coverage</div>
+        <div class="right1_word">
+          <table width="100%" border="0">
+            <tbody>
+              <tr>
+				  <td><div class="new1" align="left"><a href="right.html">Xi Jinping Leads Diplomacy of Major Countries with Chinese Characteristics to Open Up New Situations</a></div><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+              <tr>
+                <td><div class="new2" align="left"><a href="right2.html">One fly inge of precision into orbit China's private space lux</a></div><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+              <tr>
+                <td><div class="new3" align="left"><a href="right3.html">World's Largest Radio Telescope (FAST)</a></div><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+              <tr>
+				  <td><div class="new4" align="left"><a href="right4.html">China's development achievements are amazing, and the international influence is obvious to all</a></div><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+              <tr>
+                <td><div class="new5" align="left"><a href="right5.html">China's high-speed rail development is amazing, shocking the world</a></div><hr style="background-color:#F8F5F5;height:1px;border: none;"></td>
+              </tr>
+            
+			 
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="right2">
+        <div class="right2_title">Policy interpretation</div>
+        <div class="right2_word">
+			<ul>
+			<li><p align="left"><a href="right6.html">Why does the theoretical system of socialism with Chinese characteristics not include Mao Zedong Thought?</a></p><hr style="background-color:#F8F5F5;height:1px;border: none;"></li>
+			<li><p align="left"><a href="right7.html">Holiday Office: Paid Annual Leave System Has Nothing To Do With The Cancellation of Golden Week</a></p><hr style="background-color:#F8F5F5;height:1px;border: none;"></li>
+            <li><p align="left"><a href="right8.html">The Party's understanding of the law of anti-corruption is further deepened</a></p><hr style="background-color:#F8F5F5;height:1px;border: none;"></li>
+            <li><p align="left"><a href="right9.html">Restriction and supervision: the guarantee of the orderly operation of power in the sun</a></p></li>
+		  </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="bottom1">
+		<div class="bottom1_title">&nbsp;每日学习</div><br>
+        <div id="slider5" class="slider">
+        <div class="conbox">
+          <div><a href="#" title=""><img src="images/bottom1-1.jpg" width="260" height="410" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-2.png" width="260" height="410" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-4.jpg" width="260" height="410" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-3.png" width="260" height="410" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-5.jpg" width="260" height="410" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-6.jpg" width="260" height="410" /></a></div>
+          <div><a href="#" title=""><img src="images/bottom1-7.jpg" width="260" height="410" /></a></div>
+        </div>
+        <div class="switcher"> <a href="#" class="cur">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> </div>
+      </div>
+    </div>
+    <div class="bottom2">
+      <div class="bottom2_title">One week of technology</div>
+      <div class="bottom2_word">
+        <table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td><br>
+               <p align="left">"Zhenhua 30" crane ship: "Great country heavy weapon" on the Hong Kong-Zhuhai-Macao Bridge project.</p><hr style="background-color: #171717;height:1px;border: none;"></td>
+            </tr>
+            <tr>
+              <td>
+                <p align="left">The performance of the "Mozi" quantum satellite far exceeds expectations, and the test task has been completed ahead of schedule!</p><hr style="background-color: #171717;height:1px;border: none;"></td>
+            </tr>
+            <tr>
+              <td>
+                
+                <p align="left">"China Eyes" will be built to expand the array and "do homework" for the search for extraterrestrial life.</p><hr style="background-color: #171717;height:1px;border: none;"></td>
+            </tr>
+            <tr>
+              <td>
+                
+                <p align="left">High-speed rail revival: a new era of transportation to the Chinese standard.</p><hr style="background-color: #171717;height:1px;border: none;"></td>
+            </tr>
+            <tr>
+              <td>
+               <p align="left">Hong Kong-Zhuhai-Macao Bridge: Chinese wisdom behind the world miracle.</p><hr style="background-color: #171717;height:1px;border: none;"></td>
+            </tr>
+          </tbody>
+        </table>
+		  <div class="bottom2_more"><a href="bottom2-more.html">more</a></div>
+      </div>
+    </div>
+    <div class="bottom3">
+      <div class="bottom3_title">Culture Square</div>
+      <div class="bottom3_word">
+        <table width="100%" border="0">
+          <tbody>
+			  <tr>
+				  <td>&nbsp;</td>
+			  </tr>
+            <tr>
+              <td style="font-size: 13px; font-weight: bold;"><p align="center">Hangzhou: "Badaling" to build the Grand Canal Cultural Belt</p></td>
+            </tr>
+            <tr>
+              <td>
+              <span style="font-size: 13px;text-align:justify; text-justify:inter-ideograph" ><p align="left">&nbsp;&nbsp;&nbsp;&nbsp;When we look at the land of China, the Great Wall is a thousand miles, and the canal is not as shocking as it is. The Great Wall and the Canal, with hard and soft beauty, co-authored and interpret a capitalized Chinese word "people." Hangzhou is not only the key to the Grand Canal, but also the “peak” of the Grand Canal.</p></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+	<div class="bottom3_photo">
+		<div class="photo1"> <img src="images/15.jpg" width="80" height="80"/></div>
+		<div class="photo2"> <img src="images/19.jpg" width="80" height="80"/></div>
+		<div class="photo3"> <img src="images/16.jpg" width="80" height="80"/></div>
+		<div class="photo4"> <img src="images/18.jpg" width="80" height="80"/></div>
+		<div class="photo5"> <img src="images/20.jpg" width="80" height="80"/></div>
+		<div class="photo6"> <img src="images/17.jpg" width="80" height="80"/></div>
+		</div>
+	<div class="bottom3_more"><a href="bottom3-more.html">more</a></div>
+   </div>
+    <div class="bottom4">
+		<div class="bottom4_title">A model of the times</div>
+		<div class="bottom4_word"><table width="100%" border="0">
+  <tbody>
+    <tr>
+		<td style="font-size: 13px; font-weight: bold;"><p align="center">Zhang Fuqing: The first heart of an old hero</p></td>
+    </tr>
+    <tr>
+      <td><span style="font-size: 13px"><p align="left">&nbsp;&nbsp;&nbsp;&nbsp;The old hero Zhang Fuqing has accumulated his fame for more than 60 years. In the army, he protects the country; when he goes to the place, he benefits the people. He used his simple,Zhang Fuqing came to Tiananmen Square for the second time. He was in a wheelchair, and he stood up in a difficult way. He faced a standard military ceremony against the Monument to the People's Heroes.</p></span></td>
+    </tr>
+	  <tr>
+		  <td><img src="images/21.jpg" height="145" width="250"></td>
+	  </tr>
+	  
+</tbody>
+</table>
+			<div class="bottom4_more"><a href="bottom4-more.html">more</a></div>
+</div>
+	  </div>
+  </div>
+	<div class="copyright"><br>Copyright © 2019 little planet All Rights Reserved</div>
+</div>
+</body>
+</html>

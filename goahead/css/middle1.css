@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    font-family: arial;
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px auto;
+	background: #fff;
+	height: 800px;
+	width:1200px;
+}
+a{  
+	text-decoration: none;
+}
+
+img{
+	border: none;
+}
+ul,li{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.slider{
+	margin: 5px auto;
+	width: 1200px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	
+}
+.conbox{
+	position: absolute;
+	width: 1200px;
+	margin: 0 auto;
+}
+.middle{
+	margin: 0 auto;
+	width: 1200px;
+	height: 800px;
+}
+.photos{
+	margin-top:39px;
+	margin-left: 39px;
+	height: 800px;
+	width: 1200px;
+	margin: 0 auto;
+}
+.photo5{
+	padding-right: 10px;
+	float: left;
+}
+.photo6{	
+	float: left;
+}
+.photo7{
+	padding-left:10px;
+    float:left;	
+}
+.photo8{
+	padding-top: 10px;	
+	float:left;
+}
+.photo12{
+	float: right;
+	padding-top: 10px;
+	padding-right: 30px;
+}
+.photo9{
+	float:left;
+	padding-top: 10px;
+}
+.photo10{
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	float:left;
+	padding-top: 10px;
+	padding-left: 12px;
+}
+.photo11{
+	float:right;
+	padding-top: 10px;
+	padding-right:30px;
+}
+
+
+.article{
+	text-align: left;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 18px;
+}
+.article p{
+	width:1200px;
+}
+.bottom{
+	width: 100%;
+	height: 70px;
+	background: #262424;
+	text-align: center;
+	margin-top: 250px;
+}
+.bottom a{
+	color: #A7A5A5;
+	font-size: 14px;
+	text-align: center;
+}
